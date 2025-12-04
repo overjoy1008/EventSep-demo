@@ -1,0 +1,5 @@
+{
+  "name": "EventSep Demo",
+  "description": "Interactive audio source separation research demo comparing AudioSep, FlowSep, and EventSep with real-time spectrogram visualization.",
+  "requestFramePermissions": []
+}
