@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ComparisonRow, { ComparisonData } from './components/ComparisonRow';
 import ResourcesSection from './components/ResourcesSection';
