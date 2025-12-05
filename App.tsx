@@ -8,31 +8,31 @@ import QuantitativeCharts from './components/QuantitativeCharts';
 const DEMO_SAMPLES: ComparisonData[] = [
     {
         id: 'sample-1',
-        name: 'Example 1: Urban Soundscape (Siren Isolation)',
+        name: 'Example 1: Sound from MUSIC Dataset (Coming Soon)',
         // Using placeholder audio URLs for demonstration purposes
-        mixture: 'https://actions.google.com/sounds/v1/emergency/emergency_siren_short.ogg', 
-        audiosep: 'https://actions.google.com/sounds/v1/ambiences/coffee_shop.ogg', 
-        flowsep: 'https://actions.google.com/sounds/v1/transportation/car_horn.ogg',
-        eventsep: 'https://actions.google.com/sounds/v1/emergency/emergency_siren_short.ogg', 
-        groundTruth: 'https://actions.google.com/sounds/v1/emergency/emergency_siren_short.ogg',
+        mixture: '', 
+        audiosep: '', 
+        flowsep: '',
+        eventsep: '', 
+        groundTruth: '',
     },
     {
         id: 'sample-2',
-        name: 'Example 2: Nature (Bird Call Extraction)',
-        mixture: 'https://actions.google.com/sounds/v1/animals/grey_squirrel_rattle.ogg',
-        audiosep: 'https://actions.google.com/sounds/v1/water/stream_flowing.ogg',
-        flowsep: 'https://actions.google.com/sounds/v1/animals/crow_caw.ogg',
-        eventsep: 'https://actions.google.com/sounds/v1/animals/grey_squirrel_rattle.ogg',
-        groundTruth: 'https://actions.google.com/sounds/v1/animals/grey_squirrel_rattle.ogg',
+        name: 'Example 2: Sound from VGGSound Dataset (Coming Soon)',
+        mixture: '',
+        audiosep: '',
+        flowsep: '',
+        eventsep: '',
+        groundTruth: '',
     },
     {
         id: 'sample-3',
-        name: 'Example 3: Domestic Environment',
-        mixture: 'https://actions.google.com/sounds/v1/alarms/digital_watch_alarm_long.ogg',
-        audiosep: 'https://actions.google.com/sounds/v1/foley/glasses_clinking.ogg',
-        flowsep: 'https://actions.google.com/sounds/v1/household/vacuum_cleaner_on_idle.ogg',
-        eventsep: 'https://actions.google.com/sounds/v1/alarms/digital_watch_alarm_long.ogg',
-        groundTruth: 'https://actions.google.com/sounds/v1/alarms/digital_watch_alarm_long.ogg',
+        name: 'Example 3: Pop Song Separation (Coming Soon)',
+        mixture: '',
+        audiosep: '',
+        flowsep: '',
+        eventsep: '',
+        groundTruth: '',
     }
 ];
 
@@ -43,7 +43,7 @@ const App: React.FC = () => {
       <header className="pt-16 pb-10 px-4 border-b border-gray-100 bg-white">
         <div className="max-w-5xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4 text-slate-900">
-            EventSep: Selective Audio Source Separation Demo
+            EventSep: 사전 학습 모델 결합 기반의 선택적 음원 분리
           </h1>
           <h2 className="text-xl text-slate-500 font-light mb-8">
             Comparison of Mixture / AudioSep / FlowSep / EventSep / GT
@@ -108,11 +108,11 @@ const App: React.FC = () => {
       {/* Footer */}
       <footer className="bg-slate-50 border-t border-slate-200 py-12 text-center text-slate-500 text-sm">
         <p className="font-mono mb-4">EventSep Research Demo © 2024</p>
-        <div className="flex justify-center gap-6 font-medium text-slate-400">
+        {/* <div className="flex justify-center gap-6 font-medium text-slate-400">
             <span>PAPER</span>
             <span>CODE</span>
             <span>DATASET</span>
-        </div>
+        </div> */}
       </footer>
     </div>
   );
