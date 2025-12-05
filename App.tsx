@@ -8,32 +8,32 @@ import QuantitativeCharts from './components/QuantitativeCharts';
 const DEMO_SAMPLES: ComparisonData[] = [
     {
         id: 'sample-1',
-        name: 'Example 1: Sound from MUSIC Dataset (Coming Soon)',
+        name: 'Example 1: Aespa - Whiplash (vocals)',
         // Using placeholder audio URLs for demonstration purposes
-        mixture: '', 
-        audiosep: '', 
-        flowsep: '',
-        eventsep: '', 
-        groundTruth: '',
+        mixture: '/audio/whiplash.mp3', 
+        audiosep: '/audio/whiplash_audiosep.wav', 
+        flowsep: '/audio/whiplash_flowsep.wav',
+        eventsep: '/audio/whiplash_ours.wav',
+        groundTruth: '/audio/whiplash_gt.mp3',
     },
     {
         id: 'sample-2',
-        name: 'Example 2: Sound from VGGSound Dataset (Coming Soon)',
+        name: 'Example 2: Sound from MUSIC Dataset (Coming Soon)',
         mixture: '',
         audiosep: '',
         flowsep: '',
         eventsep: '',
         groundTruth: '',
     },
-    {
-        id: 'sample-3',
-        name: 'Example 3: Pop Song Separation (Coming Soon)',
-        mixture: '',
-        audiosep: '',
-        flowsep: '',
-        eventsep: '',
-        groundTruth: '',
-    }
+    // {
+    //     id: 'sample-3',
+    //     name: 'Example 3: Pop Song Separation (Coming Soon)',
+    //     mixture: '',
+    //     audiosep: '',
+    //     flowsep: '',
+    //     eventsep: '',
+    //     groundTruth: '',
+    // }
 ];
 
 const App: React.FC = () => {
