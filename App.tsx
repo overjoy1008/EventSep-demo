@@ -8,7 +8,7 @@ import QuantitativeCharts from './components/QuantitativeCharts';
 const DEMO_SAMPLES: ComparisonData[] = [
     {
         id: 'sample-1',
-        name: 'Example 1: Aespa - Whiplash (vocals)',
+        name: 'Example 1: Aespa - Whiplash (full music -> vocals only)',
         // Using placeholder audio URLs for demonstration purposes
         mixture: '/audio/whiplash.mp3', 
         audiosep: '/audio/whiplash_audiosep.wav', 
@@ -18,12 +18,12 @@ const DEMO_SAMPLES: ComparisonData[] = [
     },
     {
         id: 'sample-2',
-        name: 'Example 2: Sound from MUSIC Dataset (Coming Soon)',
-        mixture: '',
-        audiosep: '',
-        flowsep: '',
-        eventsep: '',
-        groundTruth: '',
+        name: 'Example 2: Sound from MUSIC Dataset (accordion + flute -> accordion only)',
+        mixture: '01_input_audio.wav',
+        audiosep: '03_audiosep',
+        flowsep: '04_flowsep',
+        eventsep: '03_ours',
+        groundTruth: '00_gt.wav',
     },
     // {
     //     id: 'sample-3',
