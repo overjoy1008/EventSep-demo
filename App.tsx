@@ -19,11 +19,11 @@ const DEMO_SAMPLES: ComparisonData[] = [
     {
         id: 'sample-2',
         name: 'Example 2: Sound from MUSIC Dataset (accordion + flute -> accordion only)',
-        mixture: '01_input_audio.wav',
-        audiosep: '03_audiosep',
-        flowsep: '04_flowsep',
-        eventsep: '03_ours',
-        groundTruth: '00_gt.wav',
+        mixture: '/audio/01_input_audio.wav',
+        audiosep: '/audio/03_audiosep.wav',
+        flowsep: '/audio/04_flowsep.wav',
+        eventsep: '/audio/03_soft_fade.wav',
+        groundTruth: '/audio/00_gt.wav',
     },
     // {
     //     id: 'sample-3',
